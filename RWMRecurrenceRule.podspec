@@ -6,14 +6,14 @@
 Pod::Spec.new do |s|
 
   s.name         = "RWMRecurrenceRule"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary      = "A library allowing you to create recurrence rules from iCalendar RRULE statements and to iterate the dates of a recurrence rule."
 
   s.description  = <<-DESC
 Includes an extension to EKEvent and EKRecurrenceRule as well as custom structures allowing you to iterate the dates of an EKEvent and its recurrence rule. It also allows you to create EKRecurrenceRule instance from a standard iCalendar RRULE.
                    DESC
 
-  s.homepage     = "https://github.com/timeless-space/RWMRecurrenceRule.git"
+  s.homepage     = "https://github.com/ivoneug/RWMRecurrenceRule.git"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "Rick Maddy" => "rick@maddyhome.com" }
 
@@ -21,7 +21,7 @@ Includes an extension to EKEvent and EKRecurrenceRule as well as custom structur
   s.osx.deployment_target = "10.9"
   s.watchos.deployment_target = "2.0"
 
-  s.source       = { :git => "https://github.com/timeless-space/RWMRecurrenceRule.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/ivoneug/RWMRecurrenceRule.git", :tag => "#{s.version}" }
 
   s.source_files  = "RWMRecurrenceRule/**/*.{swift,h}"
   s.swift_versions = ['5.0', '5.1']

@@ -88,7 +88,7 @@ Feel free to experiment from Xcode using the project's playground.
     use_frameworks!
 
     target 'YourAppTargetName' do
-        pod 'RWMRecurrenceRule', '~> 0.0.5'
+        pod 'RWMRecurrenceRule', '~> 0.0.6'
     end
     ```
 
