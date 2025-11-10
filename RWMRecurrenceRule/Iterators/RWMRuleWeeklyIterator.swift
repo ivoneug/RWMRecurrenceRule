@@ -51,15 +51,7 @@ class RWMRuleWeeklyIterator: RWMRuleIterator {
                 weekdays = daysOfTheWeek.map { $0 - 1 }
             } else {
                 for wd in range {
-                    if daysOfTheWeek.contains(where: { $0 == wd % 7 }) {
-                        weekdays.append(wd - firstDayOfTheWeek)
-                    }
-                }
-            }
-            // TODO: Refactor this. This ugly fix makes testWeekly12 to pass.
-            if weekdays.isEmpty {
-                for wd in range {
-                    if daysOfTheWeek.contains(where: { $0 == wd % range.upperBound }) {
+                    if daysOfTheWeek.contains(where: { $0 == ((wd - 1) % 7) + 1 }) {
                         weekdays.append(wd - firstDayOfTheWeek)
                     }
                 }
